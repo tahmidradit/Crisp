@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Crisp.csproj",
+                "${workspaceFolder}/Crisp/Crisp.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Crisp.csproj",
+                "${workspaceFolder}/Crisp/Crisp.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Crisp.csproj"
+                "${workspaceFolder}/Crisp/Crisp.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
