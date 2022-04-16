@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SDOsx9MlSt5J/rM4gIcJ7oH8eabzxeP2JhyfnAbdQHPr+JeyoM2Bk3rvuVPJbVrcdStT0PjIP17YPp0UHGECxw==",
+  "dgSpecHash": "WhWD0+Q9buBoPapdB792EVMixuuDyg4GbX8e8X8ZCc4A1dMenvjeDccYwVx86Rre+9y4R0cux7q3Oan4sJX2ng==",
   "success": true,
   "projectFilePath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp/Crisp.csproj",
   "expectedPackageFiles": [
-    "/home/tahmid/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
+    "/home/tahmid/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/tahmid/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/home/tahmid/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
     "/home/tahmid/.nuget/packages/messagepackanalyzer/2.1.152/messagepackanalyzer.2.1.152.nupkg.sha512",
@@ -36,6 +36,7 @@
     "/home/tahmid/.nuget/packages/microsoft.entityframeworkcore/6.0.4/microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "/home/tahmid/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.4/microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
     "/home/tahmid/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.4/microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",
+    "/home/tahmid/.nuget/packages/microsoft.entityframeworkcore.design/6.0.4/microsoft.entityframeworkcore.design.6.0.4.nupkg.sha512",
     "/home/tahmid/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.4/microsoft.entityframeworkcore.relational.6.0.4.nupkg.sha512",
     "/home/tahmid/.nuget/packages/microsoft.entityframeworkcore.sqlserver/6.0.4/microsoft.entityframeworkcore.sqlserver.6.0.4.nupkg.sha512",
     "/home/tahmid/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
