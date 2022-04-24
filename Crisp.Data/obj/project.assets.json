@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/home/tahmid/.nuget/packages/": {}
+    "/home/tahmidradit/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj",
+      "projectUniqueName": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj",
       "projectName": "Crisp.Data",
-      "projectPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj",
-      "packagesPath": "/home/tahmid/.nuget/packages/",
-      "outputPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/obj/",
+      "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj",
+      "packagesPath": "/home/tahmidradit/.nuget/packages/",
+      "outputPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/tahmid/.nuget/NuGet/NuGet.Config"
+        "/home/tahmidradit/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

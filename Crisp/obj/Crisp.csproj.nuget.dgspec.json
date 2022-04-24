@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp/Crisp.csproj": {}
+    "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/Crisp.csproj": {}
   },
   "projects": {
-    "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj": {
+    "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj",
+        "projectUniqueName": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj",
         "projectName": "Crisp.Data",
-        "projectPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj",
-        "packagesPath": "/home/tahmid/.nuget/packages/",
-        "outputPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/obj/",
+        "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj",
+        "packagesPath": "/home/tahmidradit/.nuget/packages/",
+        "outputPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/tahmid/.nuget/NuGet/NuGet.Config"
+          "/home/tahmidradit/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -56,17 +56,17 @@
         }
       }
     },
-    "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Repository/Crisp.Repository.csproj": {
+    "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Repository/Crisp.Repository.csproj",
+        "projectUniqueName": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj",
         "projectName": "Crisp.Repository",
-        "projectPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Repository/Crisp.Repository.csproj",
-        "packagesPath": "/home/tahmid/.nuget/packages/",
-        "outputPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Repository/obj/",
+        "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj",
+        "packagesPath": "/home/tahmidradit/.nuget/packages/",
+        "outputPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/tahmid/.nuget/NuGet/NuGet.Config"
+          "/home/tahmidradit/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -78,8 +78,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj": {
-                "projectPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj"
+              "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {
+                "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj"
               }
             }
           }
@@ -95,6 +95,10 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.4, )"
             },
@@ -124,17 +128,17 @@
         }
       }
     },
-    "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp/Crisp.csproj": {
+    "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/Crisp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp/Crisp.csproj",
+        "projectUniqueName": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/Crisp.csproj",
         "projectName": "Crisp",
-        "projectPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp/Crisp.csproj",
-        "packagesPath": "/home/tahmid/.nuget/packages/",
-        "outputPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp/obj/",
+        "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/Crisp.csproj",
+        "packagesPath": "/home/tahmidradit/.nuget/packages/",
+        "outputPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/tahmid/.nuget/NuGet/NuGet.Config"
+          "/home/tahmidradit/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -146,11 +150,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj": {
-                "projectPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/Crisp.Data.csproj"
+              "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {
+                "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj"
               },
-              "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Repository/Crisp.Repository.csproj": {
-                "projectPath": "/home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Repository/Crisp.Repository.csproj"
+              "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj": {
+                "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj"
               }
             }
           }

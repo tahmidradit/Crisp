@@ -10,3 +10,15 @@
 /home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/obj/Debug/net6.0/refint/Crisp.Data.dll
 /home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/obj/Debug/net6.0/Crisp.Data.pdb
 /home/tahmid/Projects/dotnet/gitrepo/Crisp/Crisp.Data/obj/Debug/net6.0/ref/Crisp.Data.dll
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/bin/Debug/net6.0/Crisp.Data.deps.json
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/bin/Debug/net6.0/Crisp.Data.dll
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/bin/Debug/net6.0/Crisp.Data.pdb
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/Crisp.Data.csproj.AssemblyReference.cache
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/Crisp.Data.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/Crisp.Data.AssemblyInfoInputs.cache
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/Crisp.Data.AssemblyInfo.cs
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/Crisp.Data.csproj.CoreCompileInputs.cache
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/Crisp.Data.dll
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/refint/Crisp.Data.dll
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/Crisp.Data.pdb
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/Debug/net6.0/ref/Crisp.Data.dll

@@ -2259,7 +2259,8 @@
       "Crisp.Repository/1.0.0": {
         "dependencies": {
           "Crisp.Data": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "6.0.4"
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
         },
         "runtime": {
           "Crisp.Repository.dll": {}
