@@ -20,17 +20,17 @@ namespace Crisp.Controllers
 
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllCategories()
-        {
-            var getAllCategories = await context.Categories.ToListAsync();
-            return Ok(getAllCategories);
-        }
+        // [HttpGet]
+        // public async Task<IActionResult> GetAllCategories()
+        // {
+        //     var getAllCategories = await context.Categories.ToListAsync();
+        //     return Ok(getAllCategories);
+        // }
 
         // [HttpPost]
         // public async Task<IActionResult> CreateCategory([FromBody] Category category)
         // {
-        //     category.ID
+        //     category.Id = Guid.NewGuid();
         // }
     }
 }
