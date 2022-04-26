@@ -766,3 +766,4 @@
 /mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/obj/Debug/net6.0/Crisp.pdb
 /mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/obj/Debug/net6.0/Crisp.genruntimeconfig.cache
 /mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/obj/Debug/net6.0/ref/Crisp.dll
+/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp/bin/Debug/net6.0/dotnet-watch.dll
