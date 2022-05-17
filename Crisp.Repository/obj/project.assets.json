@@ -1876,19 +1876,19 @@
     ]
   },
   "packageFolders": {
-    "/home/tahmidradit/.nuget/packages/": {}
+    "/home/tahmid/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj",
+      "projectUniqueName": "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj",
       "projectName": "Crisp.Repository",
-      "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj",
-      "packagesPath": "/home/tahmidradit/.nuget/packages/",
-      "outputPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Repository/obj/",
+      "projectPath": "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Repository/Crisp.Repository.csproj",
+      "packagesPath": "/home/tahmid/.nuget/packages/",
+      "outputPath": "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Repository/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/tahmidradit/.nuget/NuGet/NuGet.Config"
+        "/home/tahmid/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1900,8 +1900,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {
-              "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj"
+            "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {
+              "projectPath": "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj"
             }
           }
         }
@@ -1946,7 +1946,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }

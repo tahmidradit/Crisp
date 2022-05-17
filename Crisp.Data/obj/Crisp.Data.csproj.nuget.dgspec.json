@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {}
+    "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {}
   },
   "projects": {
-    "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {
+    "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj",
+        "projectUniqueName": "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj",
         "projectName": "Crisp.Data",
-        "projectPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj",
-        "packagesPath": "/home/tahmidradit/.nuget/packages/",
-        "outputPath": "/mnt/d/Project/dotnet/gitRepos/Crisp/Crisp.Data/obj/",
+        "projectPath": "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Data/Crisp.Data.csproj",
+        "packagesPath": "/home/tahmid/.nuget/packages/",
+        "outputPath": "/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/tahmidradit/.nuget/NuGet/NuGet.Config"
+          "/home/tahmid/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
