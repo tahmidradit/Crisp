@@ -6,11 +6,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GetCategoryComponent } from './category/get-category/get-category.component';
+import { CategoryService } from 'src/app/services/category/category.service';
 
 @NgModule({
   declarations: [AppComponent, GetCategoryComponent],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
+  providers: [CategoryService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
