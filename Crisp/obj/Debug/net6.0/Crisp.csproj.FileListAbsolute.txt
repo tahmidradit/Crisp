@@ -1035,3 +1035,9 @@
 /home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/obj/Debug/net6.0/Crisp.pdb
 /home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/obj/Debug/net6.0/Crisp.genruntimeconfig.cache
 /home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/obj/Debug/net6.0/ref/Crisp.dll
+/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/bin/Debug/net6.0/ClientApp/Crisp/angular.json
+/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/bin/Debug/net6.0/ClientApp/Crisp/package-lock.json
+/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/bin/Debug/net6.0/ClientApp/Crisp/package.json
+/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/bin/Debug/net6.0/ClientApp/Crisp/tsconfig.app.json
+/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/bin/Debug/net6.0/ClientApp/Crisp/tsconfig.json
+/home/tahmid/Projects/dotnet/gitRepos/Crisp/Crisp/bin/Debug/net6.0/ClientApp/Crisp/tsconfig.spec.json
