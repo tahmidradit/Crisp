@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GetCategoryComponent } from './category/get-category/get-category.component';
 import { CategoryService } from 'src/app/services/category/category.service';
+import { AddCategoryComponent } from './category/add-category/add-category.component';
 
 @NgModule({
-  declarations: [AppComponent, GetCategoryComponent],
+  declarations: [AppComponent, GetCategoryComponent, AddCategoryComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

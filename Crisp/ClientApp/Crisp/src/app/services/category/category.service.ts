@@ -6,11 +6,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CategoryService {
-  readonly baseUrl = 'https://localhost:7101/api';
+  readonly categoryBaseUrl = 'https://localhost:7101/api';
 
   constructor(private http: HttpClient) {}
 
   getCategories(): Observable<any[]> {
-    return this.http.get<any>(this.baseUrl + '/category');
+    return this.http.get<any>(this.categoryBaseUrl + '/category');
+  }
+
+  addCategory(data: any) {
+    return this.http.post(this.categoryBaseUrl + '/category', data);
   }
 }
