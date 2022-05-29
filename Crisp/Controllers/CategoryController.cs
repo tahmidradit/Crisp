@@ -4,12 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Crisp.Data.Entity;
 using Crisp.Repository.Data;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Crisp.Controllers
 {
-#nullable disable
+    #nullable disable
     [Route("api/[Controller]")]
     [ApiController]
     public class CategoryController : ControllerBase
