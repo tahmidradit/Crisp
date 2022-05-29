@@ -1,7 +1,26 @@
 <h1 class="text-purple-800 flex justify-center text-4xl mt-6 font-bold">Category Index</h1>
 <div class="container pl-96">
-    <div class="flex justify-end">
-        <button class="mt-4 border border-purple-500 text-sm font-semibold bg-purple-200 text-purple-900 rounded-full px-3 py-1"><i class="fa-solid fa-plus"></i> &nbsp; Add Category </button>
-    </div>
-    <app-get-category></app-get-category>
+  <div class="flex justify-end">
+    <button
+      class="mt-4 border border-purple-500 text-sm font-semibold bg-purple-200 text-purple-900 rounded-full px-3 py-1"><i
+        class="fa-solid fa-plus"></i> &nbsp; Add Category </button>
+  </div>
+  <div class="flex justify-center items-center">
+    <table class="w-screen text-center mt-4">
+      <thead class=" bg-purple-200">
+        <tr>
+          <th class="text-sm font-medium text-gray-900">ID</th>
+          <th class="text-sm font-medium text-gray-900">NAME</th>
+          <th class="text-sm font-medium text-gray-900">ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of getCategoriesList$ | async" class="border-b bg-purple-100">
+          <td class="text-sm text-gray-900 py-2">{{ item.id }}</td>
+          <td class="text-sm text-gray-900">{{ item.name }}</td>
+          <td class="text-sm text-gray-900">ACTIONS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
