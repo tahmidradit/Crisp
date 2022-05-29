@@ -1,24 +1,18 @@
-<h1 align="center" class="h1 mt-6"><strong>Category Index</strong></h1>
-<div class="col-12 container">
-  <div class="text-right mr-2 ml-2">
-    <a class="btn btn-primary text-white mt-2 mb-2"
-      ><i class="fa-solid fa-plus"></i> &nbsp; Add Category
-    </a>
-  </div>
-  <div class="ml-2 mr-2">
-    <table class="table table-striped table-sm text-center">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let item of getCategories$ | async">
-          <td>{{ item.id }}</td>
-          <td>{{ item.name }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="flex justify-center items-center">
+  <table class="w-screen text-center mt-4">
+    <thead class=" bg-purple-200">
+      <tr>
+        <th class="text-sm font-medium text-gray-900">ID</th>
+        <th class="text-sm font-medium text-gray-900">NAME</th>
+        <th class="text-sm font-medium text-gray-900">ACTIONS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of getCategories$ | async" class="border-b bg-purple-100">
+        <td class="text-sm text-gray-900 py-2">{{ item.id }}</td>
+        <td class="text-sm text-gray-900">{{ item.name }}</td>
+        <td class="text-sm text-gray-900">ACTIONS</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

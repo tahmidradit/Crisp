@@ -8,6 +8,7 @@ import { CategoryService } from 'src/app/services/category/category.service';
   styleUrls: ['./get-category.component.css'],
 })
 export class GetCategoryComponent implements OnInit {
+  
   getCategories$!: Observable<any[]>;
 
   constructor(private service: CategoryService) {}
