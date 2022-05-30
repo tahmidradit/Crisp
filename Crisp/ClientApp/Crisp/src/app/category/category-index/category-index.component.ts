@@ -10,11 +10,16 @@ import { Component, OnInit } from '@angular/core';
 export class CategoryIndexComponent implements OnInit {
 
   getCategoriesList$!: Observable<any[]>;
+  
  
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit(): void {
     this.getCategoriesList$ = this.categoryService.getCategoriesList();
+  }
+
+  addCategoryModalTrigger() {
+
   }
 
 }
