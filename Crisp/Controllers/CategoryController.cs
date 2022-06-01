@@ -29,9 +29,9 @@ namespace Crisp.Controllers
         }
 
         [HttpGet]
-        [Route("{id:guid}")]
+        [Route("{id:int}")]
         [ActionName("GetSingleCategory")]
-        public async Task<IActionResult> GetSingleCategory([FromRoute] Guid id)
+        public async Task<IActionResult> GetSingleCategory([FromRoute] int id)
         {
             var getSingleCategory = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
@@ -45,15 +45,14 @@ namespace Crisp.Controllers
         [HttpPost]
         public async Task<IActionResult> AddCategory([FromBody] Category category)
         {
-            category.Id = Guid.NewGuid();
             await context.Categories.AddAsync(category);
             await context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetSingleCategory), new { id = category.Id }, category);
         }
 
         [HttpPut]
-        [Route("{id:guid}")]
-        public async Task<IActionResult> UpdateCategory([FromRoute] Guid id, Category category)
+        [Route("{id:int}")]
+        public async Task<IActionResult> UpdateCategory([FromRoute] int id, Category category)
         {
             var getSingleCategory = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
@@ -67,8 +66,8 @@ namespace Crisp.Controllers
         }
 
         [HttpDelete]
-        [Route("{id:guid}")]
-        public async Task<IActionResult> DeleteCategory([FromRoute] Guid id)
+        [Route("{id:int}")]
+        public async Task<IActionResult> DeleteCategory([FromRoute] int id)
         {
             var getSingleCategory = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 

@@ -2,10 +2,14 @@
 <div class="container pl-96">
   <div class="flex justify-end">
     <!-- Add/Edit Category Modal   -->
-    <button class="mt-4 border border-purple-500 text-sm font-semibold bg-purple-200 text-purple-900 hover:bg-purple-300 rounded-full px-3 py-1" type="button" data-modal-toggle="defaultModal"><i class="fa-solid fa-plus"></i> &nbsp; Add Category</button>
+    <button class="mt-4 border border-purple-500 text-sm font-semibold bg-purple-200 text-purple-900 hover:bg-purple-300 rounded-full px-3 py-1" type="button" (click)="triggerCategory()" data-modal-toggle="defaultModal"><i class="fa-solid fa-plus"></i> &nbsp; Add/Edit Category</button>
     
   </div>
   <div class="flex justify-center items-center">
+    <!-- <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
+      <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
+    </div> -->
+
     <table class="w-screen text-center mt-4">
       <thead class="bg-purple-200">
         <tr>
@@ -29,7 +33,7 @@
     <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
         <div class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Modal Title</h3>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{categoryModalTitle}}</h3>
           <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="defaultModal"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="p-6 space-y-6">
