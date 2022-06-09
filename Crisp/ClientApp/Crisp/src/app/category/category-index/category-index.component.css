@@ -1,0 +1,32 @@
+.border-zeropx {
+    border-radius: 50px;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+#categoryAdd-toast-success,
+#categoryEdit-toast-success,
+#categoryDelete-toast-danger {
+display: none;
+}
+
+#categoryAdd-toast-success,
+#categoryEdit-toast-success,
+#categoryDelete-toast-danger {
+    animation-name: fadeInAndOut;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes fadeInAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeInAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}

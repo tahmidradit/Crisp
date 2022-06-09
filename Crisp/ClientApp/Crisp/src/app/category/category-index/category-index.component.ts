@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
 import { CategoryService } from './../../services/category/category.service';
 import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
+
 
 
 @Component({
@@ -14,7 +14,7 @@ export class CategoryIndexComponent implements OnInit {
   getCategoriesList$!: Observable<any[]>;
   categoryModalTitle:string = '';
   category:any;
-  
+  activeCategory: boolean = false;
 
   constructor(private categoryService: CategoryService) { }
 
@@ -26,14 +26,17 @@ export class CategoryIndexComponent implements OnInit {
      this.category = {
       id: 0,
       name: null,
-    };
-    if(this.category.id == 0) {
-      this.categoryModalTitle = "Add Category";
     }
-    else {
-      this.categoryModalTitle = "Edit Category";
-    }
+    this.categoryModalTitle = "Add Category";
+    this.activeCategory = true;
+    //   this.activeCategory = true;
+    // if(this.category.id == 0) {
+    //   this.categoryModalTitle = "Add Category";
+    //   this.activeCategory = true;
+    // }
+    // else {
+    //   this.categoryModalTitle = "Edit Category";
+    //   this.activeCategory = true;
+    // }
   }
-  
-
 }

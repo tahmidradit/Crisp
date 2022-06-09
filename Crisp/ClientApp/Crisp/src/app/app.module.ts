@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { CategoryService } from 'src/app/services/category/category.service';
 import { AddCategoryComponent } from './category/add-category/add-category.component';
 import { CategoryIndexComponent } from './category/category-index/category-index.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
-  declarations: [AppComponent, AddCategoryComponent, CategoryIndexComponent],
+  declarations: [AppComponent, AddCategoryComponent, CategoryIndexComponent, HomepageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
