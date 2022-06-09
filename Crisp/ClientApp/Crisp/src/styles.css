@@ -6,3 +6,7 @@
 .font-Bold {
     font-weight: bold;
 }
+
+.btn-round {
+    border-radius: 50px;
+}
