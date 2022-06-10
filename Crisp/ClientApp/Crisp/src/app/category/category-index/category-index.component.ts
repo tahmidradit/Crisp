@@ -14,7 +14,7 @@ export class CategoryIndexComponent implements OnInit {
   getCategoriesList$!: Observable<any[]>;
   categoryModalTitle:string = '';
   category:any;
-  activeCategory: boolean = false;
+  activeCategory:boolean = false;
 
   constructor(private categoryService: CategoryService) { }
 
@@ -25,7 +25,7 @@ export class CategoryIndexComponent implements OnInit {
   addCategoryTrigger() {
      this.category = {
       id: 0,
-      name: null,
+      name: null
     }
     this.categoryModalTitle = "Add Category";
     this.activeCategory = true;
@@ -39,4 +39,10 @@ export class CategoryIndexComponent implements OnInit {
     //   this.activeCategory = true;
     // }
   }
+
+  modalClose() {
+    this.activeCategory = false;
+    this.getCategoriesList$ =  this.categoryService.getCategoriesList();
+  }
+
 }

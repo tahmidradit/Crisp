@@ -25,7 +25,7 @@ export class AddCategoryComponent implements OnInit {
       name: this.name
     }
     this.categoryService.addCategory(category).subscribe(res => {
-      var closeModal = document.getElementById('AddEditCategoryModal');
+      var closeModal = document.getElementById('add-edit-modal-close');
       if(closeModal) {
         closeModal.click();
       }
@@ -40,8 +40,6 @@ export class AddCategoryComponent implements OnInit {
         }
       }, 4000);
     });
-
     this.categoryService.getCategoriesList();
-
   }
 }
