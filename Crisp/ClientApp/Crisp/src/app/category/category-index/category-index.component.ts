@@ -22,7 +22,7 @@ export class CategoryIndexComponent implements OnInit {
     this.getCategoriesList$ = this.categoryService.getCategoriesList();
   }
 
-  addEditCategoryTrigger() {
+  addCategoryTrigger() {
      this.category = {
       id: 0,
       name: null,
