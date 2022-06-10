@@ -30,3 +30,11 @@ display: none;
     50% {opacity: 1;}
     100% {opacity: 0;}
 }
+
+.background-image {
+    background-image: url('/assets/background1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;   
+}

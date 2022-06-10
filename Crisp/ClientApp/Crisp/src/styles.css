@@ -10,3 +10,9 @@
 .btn-round {
     border-radius: 50px;
 }
+
+html, body {
+    min-height: 100%;
+    height: auto;
+    margin: 0;
+}

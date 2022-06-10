@@ -1,29 +1,7 @@
-<h1 class="d-flex justify-content-center mt-2">Category Index</h1>
-<div class="">
-  <div class="">
-    <!-- Add/Edit Category Modal   -->
-    <button class="btn btn-primary btn-round py-2" type="button" (click)="addEditCategoryTrigger()" data-modal-toggle="AddEditCategoryModal"><i class="fa-solid fa-plus"></i> &nbsp; Seed Category</button>
-  </div>
-  <div class="">
-    <table class="">
-      <thead class="">
-        <tr>
-          <th>ID</th>
-          <th>NAME</th>
-          <th>ACTIONS</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let item of getCategoriesList$|async" class="">
-          <td>{{ item.id }}</td>
-          <td>{{ item.name }}</td>
-          <td>ACTIONS</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
+<div class="background-image">
+  
   <!-- Toasts -->
   <!-- <app-add-category [category]="category" *ngIf="activeCategory"></app-add-category> -->
   <!-- id="AddEditCategoryModal" -->
   <!-- Add/Edit Category Modal   -->
+</div>
