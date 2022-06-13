@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
 import { CategoryService } from './../../services/category/category.service';
 import { Component, OnInit } from '@angular/core';
-
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -14,9 +14,8 @@ export class CategoryIndexComponent implements OnInit {
   getCategoriesList$!: Observable<any[]>;
   categoryModalTitle:string = '';
   category:any;
-  activeCategory:boolean = false;
-
-  constructor(private categoryService: CategoryService) { }
+  
+  constructor(private categoryService: CategoryService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.getCategoriesList$ = this.categoryService.getCategoriesList();
@@ -28,21 +27,11 @@ export class CategoryIndexComponent implements OnInit {
       name: null
     }
     this.categoryModalTitle = "Add Category";
-    this.activeCategory = true;
-    //   this.activeCategory = true;
-    // if(this.category.id == 0) {
-    //   this.categoryModalTitle = "Add Category";
-    //   this.activeCategory = true;
-    // }
-    // else {
-    //   this.categoryModalTitle = "Edit Category";
-    //   this.activeCategory = true;
-    // }
   }
 
   modalClose() {
-    this.activeCategory = false;
     this.getCategoriesList$ =  this.categoryService.getCategoriesList();
+    this.toastr.success('Category Added', '');
   }
 
 }

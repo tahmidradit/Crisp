@@ -1,11 +1,9 @@
 <div class="background-image">
   <br>
   <div class="container container-white">
-    <div>
-      <h1 class="d-flex justify-content-center text-primary">Category Index</h1>
-      <!-- Add/Edit Category Modal   -->
-      <button class="btn btn-primary btn-round float-end py-2 mt-2 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#AddEditCategoryModal" (click)="addCategoryTrigger()"><i class="fa-solid fa-plus"></i> &nbsp; Category</button>
-    </div>
+    <h1 class="d-flex justify-content-center text-primary">Category Index</h1>      
+    <!-- Add/Edit Category Modal   -->
+    <button class="btn btn-primary btn-round float-end py-2 mt-2 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#AddEditCategoryModal" (click)="addCategoryTrigger()"><i class="fa-solid fa-plus"></i> &nbsp; Category</button>
     <div>
       <table class="table table-striped">
         <thead>
@@ -16,7 +14,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let item of getCategoriesList$|async" class="">
+          <tr *ngFor="let item of getCategoriesList$|async">
             <td>{{ item.id }}</td>
             <td>{{ item.name }}</td>
             <td>Edit|Delete</td>
@@ -25,7 +23,7 @@
       </table>
     </div>
     <!-- Alerts -->
-    <div class="alert alert-success" id="categoryAdd-toast-success" role="alert">
+    <!-- <div class="alert alert-success" id="categoryAdd-toast-success" role="alert">
       Category Added Successfully !
     </div>
     <div class="alert alert-success" id="categoryEdit-toast-success" role="alert">
@@ -34,7 +32,7 @@
     <div class="alert alert-danger" id="categoryDelete-toast-danger" role="alert">
       Category Deleted.
     </div>
-  </div>
+  </div> -->
 
   <!-- Add/Edit Category Modal   -->
   <div class="modal fade" id="AddEditCategoryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -45,7 +43,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="modalClose()" aria-label="Close" id="add-edit-modal-close"></button>
         </div>
         <div class="modal-body">
-          <app-add-category [category]="category" *ngIf="activeCategory"></app-add-category>
+          <app-add-category [category]="category"></app-add-category>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -54,3 +52,4 @@
     </div>
   </div>
 </div>
+

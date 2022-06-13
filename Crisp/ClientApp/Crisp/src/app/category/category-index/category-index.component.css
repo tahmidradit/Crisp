@@ -36,7 +36,7 @@ display: none;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;   
+    height:max-content;   
 }
 
 .container-white {
