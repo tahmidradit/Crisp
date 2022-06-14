@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { CategoryService } from './../../services/category/category.service';
 import { Component, Input, OnInit } from '@angular/core';
@@ -13,11 +14,10 @@ export class AddCategoryComponent implements OnInit {
   id: number = 0;
   name: string = "";
 
-  constructor(private categoryService: CategoryService) { }
+  constructor(private categoryService: CategoryService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
-    this.id = this.category.id;
-    this.name = this.category.name;
+    
   }
 
   addCategory() {
@@ -25,7 +25,9 @@ export class AddCategoryComponent implements OnInit {
       name: this.name
     }
     this.categoryService.addCategory(category).subscribe(res => {
+      
       var closeModal = document.getElementById('add-edit-modal-close');
+
       if(closeModal) {
         closeModal.click();
       }
@@ -40,6 +42,6 @@ export class AddCategoryComponent implements OnInit {
         }
       }, 4000);
     });
-    this.categoryService.getCategoriesList();
+    this.toastr.success('Category Added', '');
   }
 }

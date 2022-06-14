@@ -4,7 +4,6 @@
         <input class="form-control" type="text" id="name" name="name" style="border-radius: 0px;" placeholder="Category Name" [(ngModel)]="name" />
     </div>
     <div>
-        <button class="btn btn-info btn-round px-4 mt-2" *ngIf="category.id==0" (click)="addCategory()"><i class="fa-solid fa-floppy-disk"></i> &nbsp; Save</button>
-        <button class="" *ngIf="category.id!=0" ><i class="fa-solid fa-floppy-disk"></i> &nbsp; Update</button>
+        <button class="btn btn-info btn-round px-4 mt-2" (click)="addCategory()"><i class="fa-solid fa-floppy-disk"></i> &nbsp; Save</button>
     </div>
 </form>
