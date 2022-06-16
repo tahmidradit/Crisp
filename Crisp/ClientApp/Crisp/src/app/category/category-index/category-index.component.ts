@@ -27,8 +27,8 @@ export class CategoryIndexComponent implements OnInit {
     this.categoryModalTitle = "Add Category";
   }
 
-  modalClose() {
-    this.getCategoriesList$ = this.categoryService.getCategoriesList();
-  }
+  // modalClose() {
+  //   this.getCategoriesList$ = this.categoryService.getCategoriesList();
+  // }
 
 }
