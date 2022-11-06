@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class CardService {
 
+  readonly cardBaseUrl = 'https://localhost:7101/api/card';
+
   constructor() { }
 }
