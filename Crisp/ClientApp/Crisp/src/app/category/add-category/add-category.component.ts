@@ -1,4 +1,4 @@
-import { ToastrService } from 'ngx-toastr';
+//import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { CategoryService } from './../../services/category/category.service';
 import { Component, Input, OnInit } from '@angular/core';
@@ -14,7 +14,7 @@ export class AddCategoryComponent implements OnInit {
   id: number = 0;
   name: string = "";
 
-  constructor(private categoryService: CategoryService, private toastr: ToastrService) { }
+  constructor(private categoryService: CategoryService, /*private toastr: ToastrService*/) { }
 
   ngOnInit(): void {
     this.getCategory();
@@ -48,6 +48,6 @@ export class AddCategoryComponent implements OnInit {
       }, 4000);
     });
     this.getCategory();
-    this.toastr.success('Category Added', '');
+    //this.toastr.success('Category Added', '');
   }
 }
