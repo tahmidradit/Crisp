@@ -39,7 +39,9 @@ namespace Crisp.Controllers
             {
                 return NotFound("No card found !");
             }
-            else {
+
+            else 
+            {
                 return Ok(getSingleCard);
             }
         }

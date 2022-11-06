@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\.NET\\Web Application\\source\\repos\\tahmidradit\\Crisp\\Crisp.Data\\Crisp.Data.csproj": {}
+    "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj": {}
   },
   "projects": {
-    "D:\\Project\\.NET\\Web Application\\source\\repos\\tahmidradit\\Crisp\\Crisp.Data\\Crisp.Data.csproj": {
+    "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\.NET\\Web Application\\source\\repos\\tahmidradit\\Crisp\\Crisp.Data\\Crisp.Data.csproj",
+        "projectUniqueName": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj",
         "projectName": "Crisp.Data",
-        "projectPath": "D:\\Project\\.NET\\Web Application\\source\\repos\\tahmidradit\\Crisp\\Crisp.Data\\Crisp.Data.csproj",
-        "packagesPath": "C:\\Users\\TahmidRadit\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\.NET\\Web Application\\source\\repos\\tahmidradit\\Crisp\\Crisp.Data\\obj\\",
+        "projectPath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj",
+        "packagesPath": "/home/tahmid/.nuget/packages/",
+        "outputPath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TahmidRadit\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/tahmid/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +43,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/tahmid/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

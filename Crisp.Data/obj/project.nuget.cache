@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2PGo577wEH45jX/nSMYQChLdjHqAd2Wef/1mNN44eBrkwZndlzj8NLba5KXmYzASekb1prHwsoIq5H+zL8KZXw==",
+  "dgSpecHash": "BS8LBuo+0mTNXejd7dh+3PmyN2zZcZj+GvNWhryfi5gOFtavVEsizkqldSJ5XOZptXQDy0IaaPRitIwIQroouA==",
   "success": true,
-  "projectFilePath": "D:\\Project\\.NET\\Web Application\\source\\repos\\tahmidradit\\Crisp\\Crisp.Data\\Crisp.Data.csproj",
+  "projectFilePath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
