@@ -17,14 +17,9 @@ export class AddCategoryComponent implements OnInit {
   constructor(private categoryService: CategoryService, /*private toastr: ToastrService*/) { }
 
   ngOnInit(): void {
-    this.getCategory();
+  
   }
 
-  getCategory()  {
-    this.categoryService.getCategoriesList().subscribe(response => {
-      
-    });
-  }
   addCategory() {
     var category = {
       name: this.name
@@ -47,7 +42,6 @@ export class AddCategoryComponent implements OnInit {
         }
       }, 4000);
     });
-    this.getCategory();
     //this.toastr.success('Category Added', '');
   }
 }

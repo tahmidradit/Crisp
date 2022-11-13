@@ -1,4 +1,4 @@
-<div class="background-image">
+<div class="background-image vh-100">
   <br>
   <div class="container container-white">
     <h1 class="d-flex justify-content-center text-primary">Category Index</h1>      
@@ -23,7 +23,7 @@
       </table>
     </div>
     <!-- Alerts -->
-    <!-- <div class="alert alert-success" id="categoryAdd-toast-success" role="alert">
+    <div class="alert alert-success" id="categoryAdd-toast-success" role="alert">
       Category Added Successfully !
     </div>
     <div class="alert alert-success" id="categoryEdit-toast-success" role="alert">
@@ -32,7 +32,7 @@
     <div class="alert alert-danger" id="categoryDelete-toast-danger" role="alert">
       Category Deleted.
     </div>
-  </div> -->
+  </div>
 
   <!-- Add/Edit Category Modal   -->
   <div class="modal fade" id="AddEditCategoryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -40,7 +40,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">{{categoryModalTitle}}</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close" id="add-edit-modal-close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="modalClose()"  aria-label="Close" id="add-edit-modal-close"></button>
         </div>
         <div class="modal-body">
           <app-add-category [category]="category"></app-add-category>
