@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Repository\\Crisp.Repository.csproj": {}
+    "/home/tahmid/Projects/source/Crisp/Crisp.Repository/Crisp.Repository.csproj": {}
   },
   "projects": {
-    "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj": {
+    "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj",
+        "projectUniqueName": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj",
         "projectName": "Crisp.Data",
-        "projectPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj",
-        "packagesPath": "C:\\Users\\tahmidradit\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\obj\\",
+        "projectPath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj",
+        "packagesPath": "/home/tahmid/.nuget/packages/",
+        "outputPath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tahmidradit\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/tahmid/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,41 +48,49 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/tahmid/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Repository\\Crisp.Repository.csproj": {
+    "/home/tahmid/Projects/source/Crisp/Crisp.Repository/Crisp.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Repository\\Crisp.Repository.csproj",
+        "projectUniqueName": "/home/tahmid/Projects/source/Crisp/Crisp.Repository/Crisp.Repository.csproj",
         "projectName": "Crisp.Repository",
-        "projectPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Repository\\Crisp.Repository.csproj",
-        "packagesPath": "C:\\Users\\tahmidradit\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Repository\\obj\\",
+        "projectPath": "/home/tahmid/Projects/source/Crisp/Crisp.Repository/Crisp.Repository.csproj",
+        "packagesPath": "/home/tahmid/.nuget/packages/",
+        "outputPath": "/home/tahmid/Projects/source/Crisp/Crisp.Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tahmidradit\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/tahmid/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj": {
-                "projectPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj"
+              "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj": {
+                "projectPath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj"
               }
             }
           }
@@ -125,12 +131,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/tahmid/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
