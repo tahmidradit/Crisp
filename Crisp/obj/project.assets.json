@@ -10574,35 +10574,37 @@
     ]
   },
   "packageFolders": {
-    "/home/tahmid/.nuget/packages/": {}
+    "C:\\Users\\tahmidradit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tahmid/Projects/source/Crisp/Crisp/Crisp.csproj",
+      "projectUniqueName": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp\\Crisp.csproj",
       "projectName": "Crisp",
-      "projectPath": "/home/tahmid/Projects/source/Crisp/Crisp/Crisp.csproj",
-      "packagesPath": "/home/tahmid/.nuget/packages/",
-      "outputPath": "/home/tahmid/Projects/source/Crisp/Crisp/obj/",
+      "projectPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp\\Crisp.csproj",
+      "packagesPath": "C:\\Users\\tahmidradit\\.nuget\\packages\\",
+      "outputPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/tahmid/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\tahmidradit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj": {
-              "projectPath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj"
+            "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj": {
+              "projectPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj"
             },
-            "/home/tahmid/Projects/source/Crisp/Crisp.Repository/Crisp.Repository.csproj": {
-              "projectPath": "/home/tahmid/Projects/source/Crisp/Crisp.Repository/Crisp.Repository.csproj"
+            "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Repository\\Crisp.Repository.csproj": {
+              "projectPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Repository\\Crisp.Repository.csproj"
             }
           }
         }
@@ -10663,7 +10665,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/tahmid/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

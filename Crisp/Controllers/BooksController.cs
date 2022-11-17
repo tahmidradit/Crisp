@@ -27,8 +27,8 @@ namespace Crisp.Controllers
             return Ok(getAllBooks);
         }
 
-        [HttpGet]
-        [Route("{id:int}")]
+        [HttpGet("{id:int}")]
+        [ActionName("GetSingleBookAsync")]
         public async Task<IActionResult> GetSingleBookAsync([FromRoute] int id)
         {
             var getSingleBookAsync = await context.Books.FirstOrDefaultAsync(books => books.Id == id);
@@ -37,25 +37,19 @@ namespace Crisp.Controllers
             {
                 return NotFound("No books found !");
             }
-            else 
-            {
-                return Ok(getSingleBookAsync);
-            }
+            return Ok(getSingleBookAsync);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        [ActionName("Add")]
-        public async Task<IActionResult> Add([FromBody] Book book)
+        public async Task<IActionResult> AddBookAsync([FromBody] Book book)
         {
             await context.Books.AddAsync(book);
             await context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetSingleBookAsync), new {id = book.Id}, book);  
+            return CreatedAtAction(nameof(GetSingleBookAsync), new { id = book.Id}, book);  
         }
 
-        [HttpPost]
-        [Route("{id:int}")]
-        public async Task<IActionResult> Edit([FromRoute] int id, [FromBody] Book book)
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> EditBookAsync([FromRoute] int id, [FromBody] Book book)
         {
             var bookById = await context.Books.FirstOrDefaultAsync(m => m.Id == id);
 

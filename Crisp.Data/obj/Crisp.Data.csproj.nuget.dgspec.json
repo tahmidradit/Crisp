@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj": {}
+    "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj": {}
   },
   "projects": {
-    "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj": {
+    "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj",
+        "projectUniqueName": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj",
         "projectName": "Crisp.Data",
-        "projectPath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj",
-        "packagesPath": "/home/tahmid/.nuget/packages/",
-        "outputPath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/obj/",
+        "projectPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj",
+        "packagesPath": "C:\\Users\\tahmidradit\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/tahmid/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tahmidradit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,22 +50,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/tahmid/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

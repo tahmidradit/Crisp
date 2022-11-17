@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G5BU3DDfubWMvcd9qJX851eIzYzKNyETwuJao7Y8SAuCtrK3A5pc1ryU41H1sC3mPpRCey4uBsVCHPxKDyxD9A==",
+  "dgSpecHash": "sl4GcabD39yI2FlC1NS+6AAZ9ucBlZ2c5jzhFxRH+y8Xz8aB7UNUYhCE+RF5Kc0MNhqg7leCDoHN4s/MjwTLMA==",
   "success": true,
-  "projectFilePath": "/home/tahmid/Projects/source/Crisp/Crisp.Data/Crisp.Data.csproj",
-  "expectedPackageFiles": [
-    "/home/tahmid/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
-    "/home/tahmid/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp.Data\\Crisp.Data.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -11,9 +11,10 @@ import { AddCategoryComponent } from './category/add-category/add-category.compo
 import { CategoryIndexComponent } from './category/category-index/category-index.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AddCardComponent } from './card/add-card/add-card.component';
+import { AddBookComponent } from './components/book/add-book/add-book.component';
 
 @NgModule({
-  declarations: [AppComponent, AddCategoryComponent, CategoryIndexComponent, HomepageComponent, AddCardComponent],
+  declarations: [AppComponent, AddCategoryComponent, CategoryIndexComponent, HomepageComponent, AddCardComponent, AddBookComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
