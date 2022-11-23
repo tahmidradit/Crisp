@@ -1,6 +1,5 @@
-//import { ToastrService } from 'ngx-toastr';
-import { Observable } from 'rxjs';
-import { CategoryService } from './../../services/category/category.service';
+import { ToastrService } from 'ngx-toastr';
+import { CategoryService } from 'src/app/services/category/category.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -14,7 +13,7 @@ export class AddCategoryComponent implements OnInit {
   id: number = 0;
   name: string = "";
 
-  constructor(private categoryService: CategoryService, /*private toastr: ToastrService*/) { }
+  constructor(private categoryService: CategoryService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
   
@@ -32,16 +31,17 @@ export class AddCategoryComponent implements OnInit {
         closeModal.click();
       }
 
-      var categoryAddingSuccess = document.getElementById('categoryAdd-toast-success');
-      if(categoryAddingSuccess) {
-        categoryAddingSuccess.style.display = "block";
-      }
-      setTimeout(() => {
-        if(categoryAddingSuccess) {
-          categoryAddingSuccess.style.display = "none";
-        }
-      }, 4000);
-    });
-    //this.toastr.success('Category Added', '');
+      // var categoryAddingSuccess = document.getElementById('categoryAdd-toast-success');
+      // if(categoryAddingSuccess) {
+      //   categoryAddingSuccess.style.display = "block";
+      // }
+      // setTimeout(function() {
+      //   if(categoryAddingSuccess) {
+      //     categoryAddingSuccess.style.display = "none";
+      //   }
+      // }, 4000);
+    })
+
+    this.toastr.success('Category Added !', 'Notification');
   }
 }

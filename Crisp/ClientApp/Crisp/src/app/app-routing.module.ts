@@ -1,6 +1,6 @@
-import { AddCardComponent } from './card/add-card/add-card.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { CategoryIndexComponent } from './category/category-index/category-index.component';
+import { AddCardComponent } from './components/card/add-card/add-card.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { CategoryIndexComponent } from './components/category/category-index/category-index.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 

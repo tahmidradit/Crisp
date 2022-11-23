@@ -9,7 +9,7 @@
 #categoryAdd-toast-success,
 #categoryEdit-toast-success,
 #categoryDelete-toast-danger {
-display: none;
+    display: none;
 }
 
 #categoryAdd-toast-success,
