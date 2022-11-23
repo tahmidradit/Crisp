@@ -4,4 +4,5 @@ export class Book {
     name = "";
     author = "";
     isbn = "";
+    
 }

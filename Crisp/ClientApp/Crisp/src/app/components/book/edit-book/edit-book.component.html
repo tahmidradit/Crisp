@@ -1,4 +1,4 @@
-<div>
+<div class="row">
     <div class="col-6">
         <div class="col-5">
             <form *ngIf="book">
@@ -25,6 +25,8 @@
                 </tr>
             </tbody>
         </table>
-        <h1 *ngIf="book == null">No books found !</h1>
+        <div *ngIf="book == null" class="alert alert-danger col-4 mt-4 text-center" role="alert">
+            <i class="fa-solid fa-xmark"></i> No books found !
+          </div>
     </div>
 </div>
