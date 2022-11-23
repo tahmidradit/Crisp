@@ -16,7 +16,6 @@ import { AddBookComponent } from './components/book/add-book/add-book.component'
 import { ToastrModule } from 'ngx-toastr';
 import { EditBookComponent } from './components/book/edit-book/edit-book.component';
 import { BookIndexComponent } from './components/book/book-index/book-index.component';
-
 @NgModule({
   declarations: [AppComponent, AddCategoryComponent, HomepageComponent, AddCardComponent, AddBookComponent, CategoryIndexComponent, EditBookComponent, BookIndexComponent],
   imports: [
@@ -26,7 +25,7 @@ import { BookIndexComponent } from './components/book/book-index/book-index.comp
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
   ],
   providers: [CategoryService, CardService, BookService],
   bootstrap: [AppComponent],

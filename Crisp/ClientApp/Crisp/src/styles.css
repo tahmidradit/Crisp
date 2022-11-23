@@ -2,6 +2,7 @@
 /* @tailwind base; */
 /* @tailwind components; */
 /* @tailwind utilities; */
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 .font-Bold {
     font-weight: bold;
