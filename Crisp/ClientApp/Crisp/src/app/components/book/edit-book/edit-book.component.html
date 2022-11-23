@@ -1,0 +1,30 @@
+<div>
+    <div class="col-6">
+        <div class="col-5">
+            <form *ngIf="book">
+                <input class="form-control mt-2" [(ngModel)]="book.name" placeholder="Book Name" />
+                <input class="form-control mt-2" [(ngModel)]="book.author" placeholder="Author" />
+                <input class="form-control mt-2" [(ngModel)]="book.isbn" placeholder="ISBN" />
+            </form>
+        </div>        
+    </div>
+    <div class="col-6">
+        <table *ngIf="book" class="table table-secondary">
+            <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{book.name}}</td>
+                    <td>{{book.author}}</td>
+                    <td>{{book.isbn}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 *ngIf="book == null">No books found !</h1>
+    </div>
+</div>
