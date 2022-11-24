@@ -1,1 +1,26 @@
-<app-edit-book></app-edit-book>
+<button class="btn btn-primary text-white float-end mt-3 mb-2" (click)="addBook()"><i class="fa-solid fa-plus"></i> &nbsp; Add Book</button>
+<div class="">
+    <table *ngIf="books != null" class="table table-striped text-center table-sm">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{book.name}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.isbn}}</td>
+                <td>
+                    <button class="btn btn-dark text-white" (click)="updateBook(book)"><i class="fa-solid fa-pen"></i> &nbsp; Edit</button> 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div *ngIf="books == null" class="alert alert-danger col-4 mt-4 text-center" role="alert"><i class="fa-solid fa-xmark"></i> &nbsp; No books found !</div>
+
+<app-edit-book [book]="populateBook" (subscribedBooks)="refreshBookList($event)"></app-edit-book>

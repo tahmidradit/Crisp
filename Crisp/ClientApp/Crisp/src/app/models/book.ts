@@ -1,6 +1,6 @@
 export class Book {
 
-    Id? : number;
+    id? : number;
     name = "";
     author = "";
     isbn = "";
