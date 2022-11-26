@@ -1,8 +1,8 @@
-<div *ngIf="book" class="col-4 ml-4">
+<div *ngIf="book" class="col-4 ml-4 mt-6">
     <input class="form-control mt-2" [(ngModel)]="book.name" placeholder="Book Name" />
     <input class="form-control mt-2" [(ngModel)]="book.author" placeholder="Author" />
     <input class="form-control mt-2" [(ngModel)]="book.isbn" placeholder="ISBN" />
     <button class="btn btn-success text-white" *ngIf="!book.id" (click)="addBook(book)">Save</button>
-    <button class="btn btn-info text-white" *ngIf="book.id" (click)="updateBook(book)">Update</button>
+    <button class="btn btn-info text-white mr-2" *ngIf="book.id" (click)="updateBook(book)">Update</button>
     <button class="btn btn-danger text-white" *ngIf="book.id" (click)="deleteBook(book)"><i class="fa-solid fa-trash"></i> &nbsp; Delete</button>
 </div>  

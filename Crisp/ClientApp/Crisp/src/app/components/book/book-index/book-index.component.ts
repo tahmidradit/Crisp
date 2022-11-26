@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookIndexComponent implements OnInit {
 
-  books?: Book[] = [];
+  books: Book[] = [];
   populateBook?: Book;
 
   constructor(private service: BookService) {
@@ -25,7 +25,7 @@ export class BookIndexComponent implements OnInit {
   }
 
   addBook() {
-    this.populateBook = new Book;
+    this.populateBook = new Book();
   }
   
   updateBook(book: Book) {
