@@ -53,7 +53,6 @@ namespace Crisp.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddStudentAsync([FromBody] Student student)
         {
             if(ModelState.IsValid)
