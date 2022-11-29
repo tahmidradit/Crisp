@@ -26,7 +26,7 @@ import { StudentIndexComponent } from './components/student/student-index/studen
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot()
   ],
   providers: [CategoryService, CardService, BookService],
   bootstrap: [AppComponent],
