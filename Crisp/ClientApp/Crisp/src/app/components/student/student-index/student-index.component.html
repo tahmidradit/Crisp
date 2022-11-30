@@ -20,7 +20,7 @@
                     <div>
                         <!-- <input type="text" class="form-control" [(ngModel)] = "student.departmentName"> -->
                         <select class="form-select" [(ngModel)]="student.departmentName">
-                            <option *ngFor="let department of departments$" [value]="department.departmentName">{{department.departmentName}}</option>
+                            <option *ngFor="let department of departments$|async" [value]="department.departmentName">{{department.departmentName}}</option>
                         </select>
                         
                     </div>

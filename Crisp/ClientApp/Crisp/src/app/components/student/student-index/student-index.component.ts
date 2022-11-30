@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { DepartmentService } from './../../../services/department/department.service';
 import { ToastrService } from 'ngx-toastr';
 import { StudentService } from './../../../services/student/student.service';
@@ -13,7 +14,7 @@ import { Department } from 'src/app/models/department';
 export class StudentIndexComponent implements OnInit {
   
   students$: Student[] = [];
-  departments$: Department[] = [];
+  departments$!: Observable<Department[]>;
   @Input() student = new Student();
   activateStudent: boolean =  false;
   
@@ -21,6 +22,7 @@ export class StudentIndexComponent implements OnInit {
 
   ngOnInit() : void {
     this.retriveStudents();
+    this.departments$ = this.getDepartments();
   }
 
   retriveStudents() {
@@ -82,8 +84,6 @@ export class StudentIndexComponent implements OnInit {
   }
 
   getDepartments() {
-    this.departmentService.getDepartments().subscribe(result => {
-      this.departments$ = result;
-    });
+    return this.departmentService.getDepartments();
   }
 }
