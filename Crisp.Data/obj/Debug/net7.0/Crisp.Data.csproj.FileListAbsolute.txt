@@ -1,0 +1,12 @@
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\bin\Debug\net7.0\Crisp.Data.deps.json
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\bin\Debug\net7.0\Crisp.Data.dll
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\bin\Debug\net7.0\Crisp.Data.pdb
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\Crisp.Data.csproj.AssemblyReference.cache
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\Crisp.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\Crisp.Data.AssemblyInfoInputs.cache
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\Crisp.Data.AssemblyInfo.cs
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\Crisp.Data.csproj.CoreCompileInputs.cache
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\Crisp.Data.dll
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\refint\Crisp.Data.dll
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\Crisp.Data.pdb
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Data\obj\Debug\net7.0\ref\Crisp.Data.dll

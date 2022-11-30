@@ -1,8 +1,9 @@
+import { DepartmentService } from './../../../services/department/department.service';
 import { ToastrService } from 'ngx-toastr';
 import { StudentService } from './../../../services/student/student.service';
 import { Student } from './../../../models/student';
 import { Component, Input, OnInit } from '@angular/core';
-
+import { Department } from 'src/app/models/department';
 
 @Component({
   selector: 'app-student-index',
@@ -12,10 +13,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class StudentIndexComponent implements OnInit {
   
   students$: Student[] = [];
+  departments$: Department[] = [];
   @Input() student = new Student();
   activateStudent: boolean =  false;
   
-  constructor(private service: StudentService, private toastr: ToastrService) {}
+  constructor(private service: StudentService,private departmentService: DepartmentService, private toastr: ToastrService) {}
 
   ngOnInit() : void {
     this.retriveStudents();
@@ -27,9 +29,24 @@ export class StudentIndexComponent implements OnInit {
     });
   }
 
-  triggerStudentForm(student: Student) {
+  triggerAddStudentForm(student: Student) {
+    student.id = 0;
+    this.clearForm(student);
     this.activateStudent = true;
     this.student = student;
+  }
+
+  triggerEditStudentForm(student: Student) {
+    this.activateStudent = true;
+    this.student = student;
+  }
+
+  clearForm(student: Student) {
+    student.id = 0;
+    student.name = ""; 
+    student.departmentName = ""; 
+    student.studentId = "";
+    this.activateStudent = false; 
   }
 
   addStudent(student: Student) {
@@ -37,6 +54,7 @@ export class StudentIndexComponent implements OnInit {
       this.student;
       this.retriveStudents();
       this.toastr.success("New student added successfully !","Notification");
+      this.clearForm(student);
     });
   }
 
@@ -45,6 +63,7 @@ export class StudentIndexComponent implements OnInit {
     this.service.updateStudent(student).subscribe(result => {
       this.retriveStudents();
       this.toastr.success("Student record updated successfully !","Notification");
+      this.clearForm(student);
     });
   }
 
@@ -52,6 +71,19 @@ export class StudentIndexComponent implements OnInit {
     this.service.deleteStudent(student).subscribe(result => {
       this.retriveStudents();
       this.toastr.info("Student record deleted successfully !");
+    });
+  }
+
+  deleteAllStudents(student: Student) {
+    this.service.deleteAllStudents(student).subscribe(result => {
+      //this.retriveStudents();
+      this.toastr.info("All students' record deleted !");
+    });
+  }
+
+  getDepartments() {
+    this.departmentService.getDepartments().subscribe(result => {
+      this.departments$ = result;
     });
   }
 }

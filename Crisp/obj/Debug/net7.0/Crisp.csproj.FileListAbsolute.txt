@@ -287,13 +287,13 @@
 /home/tahmid/Projects/source/Crisp/Crisp/obj/Debug/net7.0/Crisp.genruntimeconfig.cache
 /home/tahmid/Projects/source/Crisp/Crisp/obj/Debug/net7.0/ref/Crisp.dll
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\appsettings.Development.json
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\appsettings.json
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\ClientApp\Crisp\angular.json
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\ClientApp\Crisp\package-lock.json
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\ClientApp\Crisp\package.json
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\ClientApp\Crisp\tsconfig.app.json
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\ClientApp\Crisp\tsconfig.json
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\ClientApp\Crisp\tsconfig.spec.json
-D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\appsettings.json
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\Crisp.exe
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\Crisp.deps.json
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\Crisp.runtimeconfig.json

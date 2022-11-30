@@ -1,0 +1,17 @@
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\bin\Debug\net7.0\Crisp.Repository.deps.json
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\bin\Debug\net7.0\Crisp.Repository.runtimeconfig.json
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\bin\Debug\net7.0\Crisp.Repository.dll
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\bin\Debug\net7.0\Crisp.Repository.pdb
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\bin\Debug\net7.0\Crisp.Data.dll
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\bin\Debug\net7.0\Crisp.Data.pdb
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.csproj.AssemblyReference.cache
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.AssemblyInfoInputs.cache
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.AssemblyInfo.cs
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.csproj.CoreCompileInputs.cache
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.csproj.CopyComplete
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.dll
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\refint\Crisp.Repository.dll
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.pdb
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\Crisp.Repository.genruntimeconfig.cache
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp.Repository\obj\Debug\net7.0\ref\Crisp.Repository.dll

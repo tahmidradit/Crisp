@@ -27,4 +27,8 @@ export class StudentService {
   deleteStudent(student: Student) : Observable<Student[]> {
     return this.httpClient.delete<Student[]>(this.baseUrl + `/${student.id}`);
   }
+
+  deleteAllStudents(student: Student) : Observable<Student[]> {
+    return this.httpClient.delete<Student[]>(this.baseUrl);
+  }
 }

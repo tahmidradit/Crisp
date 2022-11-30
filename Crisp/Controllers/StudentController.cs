@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Crisp.Data.Entity;
 using Crisp.Repository.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +19,7 @@ namespace Crisp.Controllers
         [HttpGet]
         public async Task<IActionResult> GetStudentsAsync() 
         {
-            var getStudents = await context.Students.ToListAsync();
+            var getStudents = await context.Students.Include(m => m.Department).ToListAsync();
             
             if(getStudents == null)
             {
@@ -74,7 +70,7 @@ namespace Crisp.Controllers
             {
                 getStudentById.Name = student.Name;
                 getStudentById.StudentId = student.StudentId;
-                getStudentById.Department = student.Department;
+                getStudentById.DepartmentId = student.DepartmentId;
                 await context.SaveChangesAsync();
                 return Ok(getStudentById);
             }
@@ -95,6 +91,15 @@ namespace Crisp.Controllers
             }
             
             return NotFound("No students found !");
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAllStudentsAsync()
+        {
+            //context.Students.RemoveRange(student);
+            await context.Database.ExecuteSqlRawAsync("Truncate table Students");
+            await context.SaveChangesAsync();
+            return Ok("Deleted All Records");
         }
     }
 }
