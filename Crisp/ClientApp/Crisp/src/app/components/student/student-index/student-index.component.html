@@ -1,7 +1,7 @@
 <div class="container">
-    <!-- <button class="btn btn-dark text-white mt-3 mb-2" (click)="addStudent()"><i class="fa-solid fa-plus"></i>&nbsp;Add Student</button> -->
+    <button class="btn btn-dark text-white mt-3 mb-2" (click)="triggerStudentForm(student)"><i class="fa-solid fa-plus"></i>&nbsp;Add Student</button>
     <div class="row">
-        <div class="col-4 mt-2">
+        <div class="col-4 mt-2" *ngIf="activateStudent == true">
             <div class="form-group">
                 <div>
                     <label>Name</label>
@@ -27,11 +27,11 @@
                 </div>
             </div>
             <div>
-                <button class="btn btn-info form-control text-white mt-2" *ngIf="!student.id" (click)="addStudent(student)"><i class="fa-solid fa-plus"></i> Add Student</button>
-                <button class="btn btn-dark text-white mt-2" *ngIf="student.id">Update Student</button>
+                <button class="btn btn-warning form-control text-white mt-2" *ngIf="!student.id" (click)="addStudent(student)"><i class="fa-solid fa-plus"></i> &nbsp; Add Student</button>
+                <button class="btn btn-primary text-white mt-2" *ngIf="student.id" (click)="updateStudent(student)"><i class="fa-solid fa-pen"></i> &nbsp; Update Student</button>
             </div> 
         </div>
-        <div class="col-7">
+        <div class="col-7 mt-4 table-scroll">
             <table *ngIf="students$.length != 0" class="table table-striped table-sm text-center">
                 <thead>
                     <tr>
@@ -42,12 +42,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let item of students$">
-                        <td>{{item.name}}</td>
-                        <td>{{item.department}}</td>
-                        <td>{{item.studentId}}</td>
+                    <tr *ngFor="let student of students$">
+                        <td>{{student.name}}</td>
+                        <td>{{student.department}}</td>
+                        <td>{{student.studentId}}</td>
                         <td>
-                            <button class="btn btn-dark text-white btn-sm"><i class="fa-solid fa-pen"></i> &nbsp; Edit</button>
+                            <button class="btn btn-dark text-white btn-sm" (click)="triggerStudentForm(student)"><i class="fa-solid fa-pen"></i> &nbsp; Edit</button> |
+                            <button class="btn btn-danger text-white btn-sm" (click)="deleteStudent(student)"><i class="fa-solid fa-trash"></i> &nbsp; Delete</button>
                         </td>
                     </tr>
                 </tbody>

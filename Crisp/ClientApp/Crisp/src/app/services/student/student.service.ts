@@ -19,4 +19,12 @@ export class StudentService {
   addStudent(student: Student) : Observable<Student[]> {
     return this.httpClient.post<Student[]>(this.baseUrl, student);
   }
+
+  updateStudent(student: Student) : Observable<Student[]> {
+    return this.httpClient.put<Student[]>(this.baseUrl + `/${student.id}`, student);
+  }
+
+  deleteStudent(student: Student) : Observable<Student[]> {
+    return this.httpClient.delete<Student[]>(this.baseUrl + `/${student.id}`);
+  }
 }
