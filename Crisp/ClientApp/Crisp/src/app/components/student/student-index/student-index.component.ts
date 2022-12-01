@@ -16,7 +16,7 @@ export class StudentIndexComponent implements OnInit {
   students$: Student[] = [];
   departments$!: Observable<Department[]>;
   @Input() student = new Student();
-  activateStudent: boolean =  false;
+  appearStudentForm: boolean =  false;
   
   constructor(private service: StudentService,private departmentService: DepartmentService, private toastr: ToastrService) {}
 
@@ -34,21 +34,21 @@ export class StudentIndexComponent implements OnInit {
   triggerAddStudentForm(student: Student) {
     student.id = 0;
     this.clearForm(student);
-    this.activateStudent = true;
+    this.appearStudentForm = true;
     this.student = student;
   }
 
   triggerEditStudentForm(student: Student) {
-    this.activateStudent = true;
+    this.appearStudentForm = true;
     this.student = student;
   }
 
   clearForm(student: Student) {
     student.id = 0;
     student.name = ""; 
-    student.departmentName = ""; 
+    student.departmentId = 0; 
     student.studentId = "";
-    this.activateStudent = false; 
+    this.appearStudentForm = false; 
   }
 
   addStudent(student: Student) {
@@ -61,7 +61,7 @@ export class StudentIndexComponent implements OnInit {
   }
 
   updateStudent(student: Student) {
-    this.activateStudent = true;
+    this.appearStudentForm = true;
     this.service.updateStudent(student).subscribe(result => {
       this.retriveStudents();
       this.toastr.success("Student record updated successfully !","Notification");

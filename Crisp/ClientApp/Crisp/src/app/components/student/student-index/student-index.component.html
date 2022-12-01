@@ -4,7 +4,7 @@
     <button class="btn btn-warning text-white mt-3 mb-2" (click)="clearForm(student)"><i class="fa-solid fa-ban"></i> &nbsp; Close Form</button>
     <div class="row">
         <div class="col-4 mt-2">
-            <div *ngIf="activateStudent == true">
+            <div *ngIf="appearStudentForm == true">
                 <div class="form-group">
                     <div>
                         <label>Name</label>
@@ -18,11 +18,9 @@
                         <label>Department</label>
                     </div>
                     <div>
-                        <!-- <input type="text" class="form-control" [(ngModel)] = "student.departmentName"> -->
-                        <select class="form-select" [(ngModel)]="student.departmentName">
-                            <option *ngFor="let department of departments$|async" [value]="department.departmentName">{{department.departmentName}}</option>
+                        <select class="form-select" [(ngModel)]="student.departmentId">
+                            <option *ngFor="let department of departments$|async" [value]="department.id">{{department.departmentName}}</option>
                         </select>
-                        
                     </div>
                 </div>
                 <div class="form-group">
@@ -52,7 +50,7 @@
                 <tbody>
                     <tr *ngFor="let student of students$">
                         <td>{{student.name}}</td>
-                        <td>{{student.departmentName}}</td>
+                        <td>{{student.department?.departmentName}}</td>
                         <td>{{student.studentId}}</td>
                         <td>
                             <button class="btn btn-dark text-white btn-sm" (click)="triggerEditStudentForm(student)"><i class="fa-solid fa-pen"></i> &nbsp; Edit</button> |
