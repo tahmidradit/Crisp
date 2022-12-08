@@ -1,6 +1,8 @@
+import { Observable } from 'rxjs';
+import { Book } from 'src/app/models/book';
 import { BookService } from './../../../services/book/book.service';
-import { Book } from './../../../models/book';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-book-index',
@@ -9,30 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookIndexComponent implements OnInit {
 
-  books: Book[] = [];
-  populateBook?: Book;
+  constructor(public service: BookService) {}
 
-  constructor(private service: BookService) {
-    
-  }
-
+  books$ : Book[] = [];
   ngOnInit(): void {
-    this.service.getBook().subscribe((result: Book[]) => (this.books = result));
+    this.getBooks();
   }
 
-  refreshBookList(books: Book[]) {
-    this.books = books;
+  getBooks() {
+    this.service.getBooks().subscribe(res => {
+      this.books$ = res
+    });
   }
-
   addBook() {
-    this.populateBook = new Book();
-  }
-  
-  updateBook(book: Book) {
-    this.populateBook = book;
-  }
-
-  deleteBook(book: Book) {
-    this.populateBook = book;
+    this.service.addBook().subscribe(res => {
+      this.getBooks();
+    });
   }
 }

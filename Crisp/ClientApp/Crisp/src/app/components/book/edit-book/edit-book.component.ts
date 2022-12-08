@@ -21,18 +21,13 @@ export class EditBookComponent implements OnInit {
   }
 
   addBook(book: Book) {
-    //this.service.addBook(book).subscribe((books: Book[]) => (this.subscribedBooks.emit(books) ));
-    this.service.addBook(book).subscribe(res => {
-      this.subscribedBooks.emit(res);
-      this.service.getBook().subscribe((book: Book[]) => (this.subscribedBooks.emit(book)));
-    });
   }
  
   updateBook(book: Book) {
     //this.service.updateBook(book).subscribe((books: Book[]) => (this.subscribedBooks.emit(books)));
     this.service.updateBook(book).subscribe(res => {
       this.subscribedBooks.emit(res);
-      this.service.getBook().subscribe((book: Book[]) => (this.subscribedBooks.emit(book)));
+      this.service.getBooks().subscribe((book: Book[]) => (this.subscribedBooks.emit(book)));
     });
   }
 

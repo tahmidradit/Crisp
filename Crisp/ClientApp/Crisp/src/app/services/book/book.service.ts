@@ -2,6 +2,7 @@ import { Observable } from 'rxjs';
 import { Book } from './../../models/book';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
@@ -10,14 +11,25 @@ export class BookService {
 
   readonly baseUrl = 'https://localhost:7101/api/books';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private formBuilder: FormBuilder) { }
 
-  getBook() : Observable<Book[]> {
-    return this.http.get<Book[]>(`${this.baseUrl}`);
+  formData = this.formBuilder.group({
+    name: ['',[Validators.required]],
+    author: ['',[Validators.required]],
+    isbn: ['',[Validators.required]]
+  });
+
+  getBooks() : Observable<Book[]> {
+    return this.http.get<Book[]>(this.baseUrl);
   }
 
-  addBook(book: Book): Observable<Book[]> {
-    return this.http.post<Book[]>(`${this.baseUrl}`, book);
+  addBook() {
+    var data = {
+      name: this.formData.value.name,
+      author: this.formData.value.author,
+      isbn: this.formData.value.isbn
+    }
+    return this.http.post(`${this.baseUrl}`, data);
   }
 
   updateBook(book: Book) : Observable<Book[]> {

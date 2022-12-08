@@ -1,31 +1,68 @@
-<button class="btn btn-primary text-white mt-3 mb-2" (click)="addBook()"><i class="fa-solid fa-plus"></i> &nbsp; Add Book</button>
-<div class="col-12 row">
-    <div class="col-6 ml-3">
-        <app-edit-book [book]="populateBook" (subscribedBooks)="refreshBookList($event)"></app-edit-book>
+<div class="container">
+    <button class="btn btn-primary text-white mt-3 mb-2"><i class="fa-solid fa-plus"></i> &nbsp; Add Book</button>
+    <div class="row">
+        <div class="col-4 ml-3">
+            <form [formGroup]="service.formData" (submit)="addBook()">
+                <div class="form-group">
+                    <div>
+                        <label>Book</label>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" formControlName="name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label>Author</label>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" formControlName="author">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label>ISBN</label>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" formControlName="isbn">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary mt-2">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-8">
+            <div>
+                <table *ngIf="books$.length > 0" class="table table-striped text-center table-sm">
+                    <thead>
+                        <tr>
+                            <th>Book</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let book of books$">
+                            <td>{{book.name}}</td>
+                            <td>{{book.author}}</td>
+                            <td>{{book.isbn}}</td>
+                            <td>
+                                <button class="btn btn-dark text-white"><i class="fa-solid fa-pen"></i> &nbsp; Edit</button> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div *ngIf="books$.length == 0" class="alert alert-danger col-4 mt-4 text-center" role="alert"><i class="fa-solid fa-xmark"></i> &nbsp; No books found !</div>
+        </div>  
     </div>
-    <div class="col-6">
-        <table *ngIf="books?.length != 0" class="table table-striped text-center table-sm">
-            <thead>
-                <tr>
-                    <th>Book</th>
-                    <th>Author</th>
-                    <th>ISBN</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let book of books">
-                    <td>{{book.name}}</td>
-                    <td>{{book.author}}</td>
-                    <td>{{book.isbn}}</td>
-                    <td>
-                        <button class="btn btn-dark text-white" (click)="updateBook(book)"><i class="fa-solid fa-pen"></i> &nbsp; Edit</button> 
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div *ngIf="books?.length == 0" class="alert alert-danger col-4 mt-4 text-center" role="alert"><i class="fa-solid fa-xmark"></i> &nbsp; No books found !</div>
 </div>
     
 
