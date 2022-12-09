@@ -5,7 +5,7 @@
             <form [formGroup]="service.formData" (submit)="addBook()">
                 <div class="form-group">
                     <div>
-                        <label>Book</label>
+                        <label>Book Name</label>
                     </div>
                     <div>
                         <input type="text" class="form-control" formControlName="name">
@@ -42,7 +42,7 @@
                 <table *ngIf="books$.length > 0" class="table table-striped text-center table-sm">
                     <thead>
                         <tr>
-                            <th>Book</th>
+                            <th>Book Name</th>
                             <th>Author</th>
                             <th>ISBN</th>
                             <th>Actions</th>
@@ -54,7 +54,7 @@
                             <td>{{book.author}}</td>
                             <td>{{book.isbn}}</td>
                             <td>
-                                <button class="btn btn-dark text-white"><i class="fa-solid fa-pen"></i> &nbsp; Edit</button> 
+                                <button class="btn btn-dark text-white" (click)="preFillupdateBook(book)" ><i class="fa-solid fa-pen"></i> &nbsp; Edit</button> 
                             </td>
                         </tr>
                     </tbody>

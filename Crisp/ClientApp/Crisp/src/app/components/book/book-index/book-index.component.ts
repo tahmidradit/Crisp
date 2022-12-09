@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { Book } from 'src/app/models/book';
 import { BookService } from './../../../services/book/book.service';
@@ -11,21 +12,35 @@ import { FormBuilder } from '@angular/forms';
 })
 export class BookIndexComponent implements OnInit {
 
-  constructor(public service: BookService) {}
+  constructor(public service: BookService, private toastr: ToastrService, private formBuilder: FormBuilder) {}
 
   books$ : Book[] = [];
+  book = new Book();
+
   ngOnInit(): void {
     this.getBooks();
   }
 
+  preFillupdateBook(book: Book) {
+    this.service.formData.get('name')?.setValue(book.name);
+    this.service.formData.get('author')?.setValue(book.author);
+    this.service.formData.get('isbn')?.setValue(book.isbn);
+  }
+
   getBooks() {
-    this.service.getBooks().subscribe(res => {
-      this.books$ = res
+    this.service.getBooks().subscribe(result => {
+      this.books$ = result
     });
   }
+
   addBook() {
-    this.service.addBook().subscribe(res => {
+    this.service.addBook().subscribe(result => {
       this.getBooks();
+      this.toastr.success("Book record added successfully !","Notification");
     });
+  }
+
+  updateBook() {
+    this
   }
 }
