@@ -1,9 +1,7 @@
 import { ToastrService } from 'ngx-toastr';
-import { Observable } from 'rxjs';
 import { Book } from 'src/app/models/book';
 import { BookService } from './../../../services/book/book.service';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-book-index',
@@ -12,7 +10,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class BookIndexComponent implements OnInit {
 
-  constructor(public service: BookService, private toastr: ToastrService, private formBuilder: FormBuilder) {}
+  constructor(public service: BookService, private toastr: ToastrService) {}
 
   books$ : Book[] = [];
   book = new Book();
