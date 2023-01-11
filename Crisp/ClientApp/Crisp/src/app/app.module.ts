@@ -17,8 +17,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { EditBookComponent } from './components/book/edit-book/edit-book.component';
 import { BookIndexComponent } from './components/book/book-index/book-index.component';
 import { StudentIndexComponent } from './components/student/student-index/student-index.component';
+import { ExportComponent } from './components/export/export/export.component';
 @NgModule({
-  declarations: [AppComponent, AddCategoryComponent, HomepageComponent, AddCardComponent, AddBookComponent, CategoryIndexComponent, EditBookComponent, BookIndexComponent, StudentIndexComponent],
+  declarations: [AppComponent, AddCategoryComponent, HomepageComponent, AddCardComponent, AddBookComponent, CategoryIndexComponent, EditBookComponent, BookIndexComponent, StudentIndexComponent, ExportComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

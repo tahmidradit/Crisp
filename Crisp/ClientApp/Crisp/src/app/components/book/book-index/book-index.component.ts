@@ -37,8 +37,4 @@ export class BookIndexComponent implements OnInit {
       this.toastr.success("Book record added successfully !","Notification");
     });
   }
-
-  updateBook() {
-    this
-  }
 }

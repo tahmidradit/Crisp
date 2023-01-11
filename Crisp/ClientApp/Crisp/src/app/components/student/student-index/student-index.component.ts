@@ -5,7 +5,7 @@ import { StudentService } from './../../../services/student/student.service';
 import { Student } from './../../../models/student';
 import { Component, Input, OnInit } from '@angular/core';
 import { Department } from 'src/app/models/department';
-
+import * as XLSX from 'xlsx';
 @Component({
   selector: 'app-student-index',
   templateUrl: './student-index.component.html',
@@ -17,7 +17,7 @@ export class StudentIndexComponent implements OnInit {
   departments$!: Observable<Department[]>;
   @Input() student = new Student();
   appearStudentForm: boolean =  false;
-  
+  fileName= 'ExcelSheet.xlsx';
   constructor(private service: StudentService,private departmentService: DepartmentService, private toastr: ToastrService) {}
 
   ngOnInit() : void {
@@ -85,5 +85,20 @@ export class StudentIndexComponent implements OnInit {
 
   getDepartments() {
     return this.departmentService.getDepartments();
+  }
+
+  exportexcel(): void
+  {
+    /* pass here the table id */
+    let element = document.getElementById('std');
+    const ws: XLSX.WorkSheet =XLSX.utils.table_to_sheet(element);
+ 
+    /* generate workbook and add the worksheet */
+    const wb: XLSX.WorkBook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+ 
+    /* save to file */  
+    XLSX.writeFile(wb, this.fileName);
+ 
   }
 }
