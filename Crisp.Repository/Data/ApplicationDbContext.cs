@@ -11,6 +11,7 @@ namespace Crisp.Repository.Data
         public DbSet<Student> Students { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Subcategory> Subcategories { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
     }
 }
