@@ -10,10 +10,12 @@ namespace Crisp.Controllers
     public class StudentController : ControllerBase
     {
         private readonly ApplicationDbContext context;
+        private readonly IWebHostEnvironment webHostingEnvironment;
 
-        public StudentController(ApplicationDbContext context)
+        public StudentController(ApplicationDbContext context, IWebHostEnvironment webHostingEnvironment)
         {
             this.context = context;
+            this.webHostingEnvironment = webHostingEnvironment;
         }
 
         [HttpGet]
@@ -55,6 +57,28 @@ namespace Crisp.Controllers
             {
                 await context.Students.AddAsync(student);
                 await context.SaveChangesAsync();
+
+                //Image upload handling
+                string webRootPath = webHostingEnvironment.WebRootPath;
+                var files = HttpContext.Request.Form.Files;
+                var studentId = student.Id;
+                var findStudentById = await context.Students.FindAsync(studentId);
+                string folderName = "images";
+                var storage = Path.Combine(webRootPath, folderName);
+                var extension = Path.GetExtension(files[0].FileName);
+                var fileName = studentId + extension;
+                var fileLink = Path.Combine(storage, fileName);
+
+                if (files.Count > 0)
+                {
+                    //image inserted
+                    using (var filesStream = new FileStream(fileLink, FileMode.Create))
+                    {
+                        files[0].CopyTo(filesStream);
+                    }
+                    findStudentById.Image = @"\images\" + fileName; //Saving image location in database
+                }
+
                 return CreatedAtAction(nameof(GetStudentAsync), new { id = student.Id}, student); 
             }
             
