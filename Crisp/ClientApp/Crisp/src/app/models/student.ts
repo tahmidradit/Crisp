@@ -5,4 +5,5 @@ export class Student {
     studentId: string = "";
     department?: Department;
     departmentId?: number;
+    image: string = "";
 }

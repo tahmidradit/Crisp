@@ -60,21 +60,21 @@ namespace Crisp.Controllers
 
                 //Image upload handling
                 string webRootPath = webHostingEnvironment.WebRootPath;
-                var files = HttpContext.Request.Form.Files;
+                var files = Request.Form.Files[0];
                 var studentId = student.Id;
                 var findStudentById = await context.Students.FindAsync(studentId);
                 string folderName = "images";
                 var storage = Path.Combine(webRootPath, folderName);
-                var extension = Path.GetExtension(files[0].FileName);
+                var extension = Path.GetExtension(files.FileName);
                 var fileName = studentId + extension;
                 var fileLink = Path.Combine(storage, fileName);
 
-                if (files.Count > 0)
+                if (files.Length > 0)
                 {
                     //image inserted
                     using (var filesStream = new FileStream(fileLink, FileMode.Create))
                     {
-                        files[0].CopyTo(filesStream);
+                        files.CopyTo(filesStream);
                     }
                     findStudentById.Image = @"\images\" + fileName; //Saving image location in database
                 }

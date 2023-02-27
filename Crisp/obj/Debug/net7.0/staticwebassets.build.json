@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "9cgqmDRLRwa4Ea29motcYc0D9LKBuXTPFJIyBmbbObQ=",
+  "Hash": "1ZRuR9/zFB2b2Pl1tUOTkYyjsUXmWk4Tmm/wJippvn8=",
   "Source": "Crisp",
   "BasePath": "_content/Crisp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Crisp\\wwwroot",
+      "Source": "Crisp",
+      "ContentRoot": "D:\\Project\\dotnet\\WebApplication\\source\\Crisp\\Crisp\\wwwroot\\",
+      "BasePath": "_content/Crisp",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

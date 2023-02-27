@@ -31,7 +31,7 @@ app.UseHttpsRedirection();
 app.UseCors(cors);
 
 app.UseAuthorization();
-
+app.UseStaticFiles();
 app.MapControllers();
 
 app.Run();

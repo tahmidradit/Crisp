@@ -581,3 +581,4 @@ D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\Irony.dll
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\SixLabors.Fonts.dll
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\System.IO.Packaging.dll
 D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\XLParser.dll
+D:\Project\dotnet\WebApplication\source\Crisp\Crisp\bin\Debug\net7.0\Crisp.staticwebassets.runtime.json

@@ -5,36 +5,46 @@
     <div class="row">
         <div class="col-4 mt-2">
             <div *ngIf="appearStudentForm == true">
-                <div class="form-group">
-                    <div>
-                        <label>Name</label>
+                 <form method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <div>
+                            <label>Name</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" name="student.name" [(ngModel)] = "student.name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label>Department</label>
+                        </div>
+                        <div>
+                            <select class="form-select" name="student.departmentId" [(ngModel)]="student.departmentId">
+                                <option *ngFor="let department of departments$|async" [value]="department.id">{{department.departmentName}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label>Student Id</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" name="student.studentId" [(ngModel)] = "student.studentId">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label>Image</label>
+                        </div>
+                        <div>
+                            <input type="file" name="student.image"  [(ngModel)] = "student.image" multiple class="form-control" >
+                        </div>
                     </div>
                     <div>
-                        <input type="text" class="form-control" [(ngModel)] = "student.name">
+                        <button class="btn btn-warning form-control text-white mt-2" *ngIf="!student.id" (click)="addStudent(student)"><i class="fa-solid fa-plus"></i> &nbsp; Add Student</button>
+                        <button class="btn btn-primary text-white mt-2" *ngIf="student.id" (click)="updateStudent(student)"><i class="fa-solid fa-pen"></i> &nbsp; Update Student</button>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div>
-                        <label>Department</label>
-                    </div>
-                    <div>
-                        <select class="form-select" [(ngModel)]="student.departmentId">
-                            <option *ngFor="let department of departments$|async" [value]="department.id">{{department.departmentName}}</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div>
-                        <label>Student Id</label>
-                    </div>
-                    <div>
-                        <input type="text" class="form-control" [(ngModel)] = "student.studentId">
-                    </div>
-                </div>
-                <div>
-                    <button class="btn btn-warning form-control text-white mt-2" *ngIf="!student.id" (click)="addStudent(student)"><i class="fa-solid fa-plus"></i> &nbsp; Add Student</button>
-                    <button class="btn btn-primary text-white mt-2" *ngIf="student.id" (click)="updateStudent(student)"><i class="fa-solid fa-pen"></i> &nbsp; Update Student</button>
-                </div> 
+                </form>       
             </div>
         </div>
         <div class="col-7 mt-4 table-scroll">
